@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CONGdo - Booknow</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="logo.png">
+	<style type="text/css">
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+
+
+input[type=button] {
+    width: 100%;
+    background-color: #ff3e3e;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0px 0px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #fb2525;
+}
+
+div {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+h3 {
+	color: #ff3e3e;
+	text-align: center;
+	font-family: arial;
+}
+
+a {
+    color: #000;
+    font-family: arial;
+}
+</style>
+</head>
+<body>
+
+	<div class="header">
+		<ul>
+			<a href="index.html"><li><img class="headerlogo" src="home.png">Home</li></a>
+			<a href="room.html"><li><img class="headerlogo" src="room.png">Room</li></a>
+			<a href="facility.html"><li><img class="headerlogo" src="facility.png">Facility</li></a>
+			<a href="promo.html"><li><img class="headerlogo" src="promo.png">Promo</li></a>
+			<a href="gallery.html"><li><img class="headerlogo" src="gallery.png">Gallery</li></a>
+			<a href="register.html"><li><img class="headerlogo" src="register.png">Register</li></a>
+			<a href="login.html"><li><img class="headerlogo" src="user.png">Login</li></a>
+		</ul>
+		<a class="imageho" href="index.html"><img class="headlogo" src="logo2.png"></a>
+	</div>
+
+	<h3>1. Customer Information.</h3>
+
+<div>
+  <form action="step2.html">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.">
+    <label for="lname">Telephone Number:</label>
+    <input type="text" id="lname" name="telno" placeholder="###-####-####">
+      <br><br><label for="lname">Fax:</label>
+    <input type="number" id="lname" name="Email" placeholder="Adult">
+       <label for="lname">Fax:</label>
+    <input type="number" id="lname" name="Email" placeholder="Child">
+    <label for="lname">Room No.:</label>
+    <input type="number" id="lname" name="Email" placeholder="Child"><br><br>
+     <label for="date">Date in</label>
+    <input type="date" id="datein" name="in" placeholder="Your last name..">
+    <label for="date">Date out</label>
+    <input type="date" id="dateout" name="out" placeholder="Your last name..">
+
+
+    <label for="country">Roomtype</label>
+    <select id="country" name="country">
+      <option value="australia">Deluxe Room</option>
+      <option value="canada">Junior Suite</option>
+      <option value="usa">Executive Suite</option>
+      <option value="usa">Bay Suite</option>
+      <option value="usa">Commerce Suite</option>
+      <option value="usa">Acacia Suite</option>
+    </select>
+
+	<input type="button" value="Next" onclick="window.location.href='payment.html'" />
+	<input type="button" value="Cancel" onclick="window.location.href='index.html'" />
+  </form>
+</div>
+
+</body>
+</html>
